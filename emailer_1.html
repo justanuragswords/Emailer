@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Clinical Digest – Volume 1, 2026 | Coloplast Academy</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background-color: #f0f4f8;
+    font-family: 'Google Sans', 'Product Sans', 'Arial', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .email-wrapper {
+    width: 100%;
+    background-color: #f0f4f8;
+    padding: 0;
+  }
+
+  .email-container {
+    max-width: 620px;
+    margin: 0 auto;
+    background-color: #ffffff;
+  }
+
+  .header-banner { width: 100%; display: block; line-height: 0; }
+  .header-banner img { width: 100%; display: block; }
+
+  .hero-section { background-color: #ffffff; padding: 24px 24px 0 24px; }
+
+  .hero-headline {
+    font-family: 'Google Sans', 'Product Sans', 'Arial', sans-serif;
+    font-size: 24px; font-weight: 700; color: #1a1a2e;
+    line-height: 1.25; margin-bottom: 12px; letter-spacing: -0.3px;
+  }
+  .hero-subtext {
+    font-family: 'Google Sans', 'Product Sans', 'Arial', sans-serif;
+    font-size: 13px; font-weight: 400; color: #0099cc; line-height: 1.55;
+  }
+
+  .evidence-header { background-color: #1b4f72; margin: 20px 0 0 0; padding: 11px 24px; }
+  .evidence-header-title {
+    font-family: 'Google Sans', 'Product Sans', 'Arial', sans-serif;
+    font-size: 17px; font-weight: 700; font-style: italic; color: #ffffff;
+  }
+
+  .evidence-list { background-color: #ffffff; padding: 14px 16px; }
+
+  /* ICON CELL — fixed width, consistent padding on ALL rows */
+  .ic { vertical-align: top; width: 90px; padding: 0px 0px 0px 0px; }
+  .ic1 { vertical-align: top; width: 90px; padding: 0px 0px 0px 0px; }
+  .ic2 { vertical-align: top; width: 90px; padding: 0px 0px 0px 0px; }
+  .ic3 { vertical-align: top; width: 90px; padding: 0px 0px 0px 0px; }
+
+  /* number badge */
+  .badge {
+    display: inline-block; background: #1b4f72; color: #fff;
+    font-family: 'Google Sans','Product Sans',Arial,sans-serif;
+    font-size: 10px; font-weight: 700; width: 18px; height: 18px;
+    border-radius: 50%; text-align: center; line-height: 18px;
+    margin-bottom: 4px;
+  }
+
+  /* author tag */
+  .atag {
+    display: block; background: #f0f8ff; border: 1px solid #a8cde0;
+    border-radius: 4px; padding: 2px 4px;
+    font-family: 'Google Sans','Product Sans',Arial,sans-serif;
+    font-size: 7.5px; font-weight: 600; color: #1b4f72;
+    white-space: nowrap; margin-bottom: 7px;
+  }
+
+  /* icon image — always fills the cell width */
+  .ic img { width: 134px; height: 152px; display: block; object-fit: contain; border: none;}
+  .ic1 img { width: 134px; height: 138px; display: block; object-fit: contain; border: none;}
+  .ic2 img { width: 134px; height: 138px; display: block; object-fit: contain; border: none;}
+  .ic3 img { width: 134px; height: 144px; display: block; object-fit: contain; border: none;}
+
+  /* MAIN TEXT CELL — consistent padding on ALL rows */
+  .mc {
+  width: 260px;
+  min-width: 260px;
+  vertical-align: top;
+  padding: 12px 10px 12px 16px;
+}
+  .mc-title {
+  font-family: 'Google Sans','Product Sans',Arial,sans-serif;
+  font-size: 12px; font-weight: 700; color: #0077aa;
+  margin-bottom: 5px; line-height: 1.35;
+  border-left: 2.5px solid #0099cc;
+  padding-left: 8px;
+}
+  .mc-body {
+    font-family: 'Google Sans','Product Sans',Arial,sans-serif;
+    font-size: 10.5px; color: #3a4a5a; line-height: 1.6;
+  }
+  .mc-body strong { font-weight: 700; color: #1a2a3a; }
+
+  /* CALLOUT CELL — consistent width and padding on ALL rows 
+  .cc { vertical-align: middle; width: 162px; padding: 12px 10px 12px 10px; }
+  .cc1 { vertical-align: middle; width: 162px; padding: 4px 8px 4px 4px; }*/
+  .cc2 { vertical-align: middle; width: 162px; padding: 12px 10px 12px 10px; }
+  .cc3 { vertical-align: middle; width: 162px; padding: 12px 10px 12px 10px; }
+
+.cc {
+  vertical-align: middle; width: 160px;
+  padding: 12px 10px;
+  border-top: 1.5px solid #dde8f0;
+  border-right: 1.5px solid #dde8f0;
+  border-bottom: 1.5px solid #dde8f0;
+  border-left: none;
+  border-radius: 0 10px 10px 0;
+  background: #ffffff;
+}
+.cc1 {
+  vertical-align: middle; width: 160px;
+  padding: 4px 8px 4px 4px;
+  border-top: 1.5px solid #dde8f0;
+  border-right: 1.5px solid #dde8f0;
+  border-bottom: 1.5px solid #dde8f0;
+  border-left: none;
+  border-radius: 0 10px 10px 0;
+  background: #ffffff;
+}
+.cbox {
+  background: #e8f4fb;
+  border: 1.5px solid #b8ddf0;
+  border-radius: 8px;
+  padding: 10px;
+}
+.cbox1 {
+  background: #e8f4fb;
+  border: 1.5px solid #b8ddf0;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+ /* .cbox {
+    background: #e8f4fb; border: 1px solid #b8ddf0;
+    border-radius: 8px; padding: 10px; height: 100%;
+  }
+.cbox1 {
+    background: #e8f4fb; border: 1px solid #b8ddf0;
+    border-radius: 8px; padding: 5px; height: 100%;
+  }*/
+  .cbox p {
+    font-family: 'Google Sans','Product Sans',Arial,sans-serif;
+    font-size: 10px; color: #1a3a50; line-height: 1.6;
+  }
+.cbox1 p {
+    font-family: 'Google Sans','Product Sans',Arial,sans-serif;
+    font-size: 10px; color: #1a3a50; line-height: 1.6;
+  }
+  .cbox strong { font-weight: 700; color: #0a2a40; }
+
+  /* row border wrapper */
+   .ev-table {
+    width: 100%; border-collapse: collapse;
+    border: 1.5px solid #dde8f0;
+    border-radius: 50px;
+    margin-bottom: 12px;
+    background: #fff;
+  }
+
+  .summary-section { padding: 6px 16px 14px; background: #fff; }
+  .summary-box {
+    border: 1.5px solid #b8ddf0; border-radius: 10px;
+    padding: 14px 16px; background: #f5fbff;
+  }
+  .summary-box p {
+    font-family: 'Google Sans','Product Sans',Arial,sans-serif;
+    font-size: 11px; color: #1a3a50; line-height: 1.7;
+    font-style: italic; font-weight: 500; text-align: center;
+  }
+
+  .footnote-strip { background-color: #96C5CF; padding: 7px 16px; margin-bottom: 20px; }
+  .footnote-strip p {
+    font-family: 'Google Sans','Product Sans',Arial,sans-serif;
+    font-size: 8px; color: #2a4a60; line-height: 1.5;
+    font-style: italic; text-align: center;
+  }
+
+  .footer-banner { width: 100%; display: block; line-height: 0; }
+  .footer-banner img { width: 100%; display: block; }
+
+  .legal-footer { background-color: #f5f5f5; padding: 5px 10px; border-top: 1px solid #e0e0e0; }
+</style>
+</head>
+<body>
+<div class="email-wrapper">
+<div class="email-container">
+
+  <!-- HEADER BANNER -->
+  <div class="header-banner">
+    <img src="C:\Users\HP\Downloads\Emailer1\AssetsEmailer1\ClinicaldigestBanner.png" alt="Clinical Digest Banner">
+  </div>
+
+  <!-- HERO SECTION -->
+  <div class="hero-section">
+    <table style="width:100%;border-collapse:collapse;">
+      <tr>
+        <td style="vertical-align:top;width:54%;padding-right:16px;">
+          <p class="hero-headline">Up to 40% of diabetic foot ulcers recur within one year.</p>
+          <p class="hero-subtext">This raises an important question. Are current approaches overly focused on closure alone?</p>
+        </td>
+        <td style="vertical-align:top;width:46%;">
+          <img src="C:\Users\HP\Downloads\Emailer1\AssetsEmailer1\ImageBanner1.png"
+               alt="Diabetic foot care illustration"
+               style="width:100%;border-radius:10px;display:block;border:1.5px solid #d0e8f5;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- EVIDENCE REVIEWED HEADER -->
+  <div style="margin:20px 0 0 0;padding:0;line-height:0;">
+  <table style="border-collapse:collapse;width:40%;">
+    <tr>
+      <td style="background:#1b4f72;width:calc(66.66% - 18px);padding:11px 0 11px 24px;vertical-align:middle;">
+        <span style="font-family:'Google Sans','Product Sans',Arial,sans-serif;font-size:17px;font-weight:700;font-style:italic;color:#fff;">Evidence reviewed</span>
+      </td>
+      <td style="width:18px;padding:0;vertical-align:middle;line-height:0;">
+        <!-- right-pointing triangle using border trick -->
+        <div style="width:0;height:0;border-top:22px solid transparent;border-bottom:22px solid transparent;border-left:18px solid #1b4f72;"></div>
+      </td>
+      <td style="background:#ffffff;"></td>
+    </tr>
+  </table>
+</div>
+
+  <!-- EVIDENCE ITEMS -->
+  <div class="evidence-list">
+
+    <!-- ITEM 1 -->
+    <table class="ev-table">
+      <tr>
+        <td class="ic">
+          <img src="C:\Users\HP\Downloads\Emailer1\AssetsEmailer1\Icon1.png" alt="Icon 1" />
+        </td>
+        <td class="mc">
+          <p class="mc-title">Risk of recurrence</p>
+          <p class="mc-body">Current evidence indicates that recurrence is not an unpredictable outcome.<strong> A meta-analysis on DFU recurrence identifies consistent risk factors including neuropathy, infection at presentation, poor glycaemic control, and prior ulcer history.</strong>*</p>
+        </td>
+        <td class="cc">
+          <div class="cbox">
+            <p>This highlights the importance of early risk stratification in clinical decision-making.</p>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <!-- ITEM 2 -->
+    <table class="ev-table">    
+      <tr>
+        <td class="ic1">
+          <img src="C:\Users\HP\Downloads\Emailer1\AssetsEmailer1\Icon2.png" alt="Icon 2" />
+        </td>
+        <td class="mc">
+          <p class="mc-title">Optimizing Wound Bed Preparation Role of Hydrogel Dressings</p>
+          <p class="mc-body">Wound bed preparation remains a critical determinant of outcomes. Evidence From 15 RCT on anaysis on <strong>hydrogel dressings</strong> reinforces the role of maintaining a moist wound environment.*</p>
+        </td>
+        <td class="cc1">
+          <div class="cbox1">
+            <p>Evidence on <strong>hydrogel dressings</strong> reinforces the role of maintaining a moist wound environment and enabling effective <strong>autolytic debridement to support progression</strong> toward closure.</p>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <!-- ITEM 3 -->
+    <table class="ev-table">
+      <tr>
+        <td class="ic2">
+          <img src="C:\Users\HP\Downloads\Emailer1\AssetsEmailer1\Icon3.png" alt="Icon 3" />
+        </td>
+        <td class="mc">
+          <p class="mc-title">Adjunctive therapy in wound management</p>
+          <p class="mc-body">Randomized data from the meta analysis supports the use of <strong>adjunctive therapies such as negative pressure wound therapy, skin substitutes, platelet-rich plasma/fibrin, and hyperbaric oxygen therapy.</strong>*</p>
+        </td>
+        <td class="cc2">
+          <div class="cbox1">
+            <p><strong>Delayed escalation</strong> continues to be associated with suboptimal outcomes.<br>Timely escalation is essential in <strong>non-responsive wounds.</strong></p>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <!-- ITEM 4 -->
+    <table class="ev-table" style="margin-bottom:4px;">
+      <tr>
+        <td class="ic3">
+          <img src="C:\Users\HP\Downloads\Emailer1\AssetsEmailer1\Icon4.png" alt="Icon 4" />
+        </td>
+        <td class="mc">
+          <p class="mc-title">Role of AI in wound assessment</p>
+          <p class="mc-body">Post-discharge monitoring represents an emerging gap in care was highlighted in a multicenter proof-of-concept clinical evaluation done to assess the accuracy of an artificial intelligence system on a smartphone for automated detection of diabetic foot ulcers.*</p>
+        </td>
+        <td class="cc3">
+          <div class="cbox1">
+            <p>Early <strong>real-world data on AI-enabled wound assessment</strong> suggests potential for more <strong>consistent tracking</strong> and <strong>earlier identification</strong> of deterioration.</p>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+  </div>
+
+  <!-- SUMMARY BOX -->
+  <div class="summary-section">
+    <div class="summary-box">
+      <p><em>Taken together, the evidence indicates a shift in DFU management. The focus is moving from isolated treatment decisions to a more continuous, risk-based approach that includes early identification, optimized wound preparation, timely intervention, and structured follow-up.</em></p>
+    </div>
+  </div>
+
+  <!-- FOOTNOTE STRIP -->
+  <div class="footnote-strip">
+    <p>*Please find attached concise 1-page summaries and references of four key studies for quick review Full-text articles are available upon request.*</p>
+  </div>
+
+  <!-- FOOTER BANNER -->
+  <div class="footer-banner">
+    <img src="C:\Users\HP\Downloads\Emailer1\AssetsEmailer1\LowerBanner.png"
+         alt="Coloplast Academy – the medical arm of Coloplast" />
+  </div>
+
+</div>
+  <!-- LEGAL FOOTER -->
+  <div class="legal-footer">
+    <table style="width:100%;border-collapse:collapse;">
+      <tr>
+        <td style="width:20px;vertical-align:middle;">
+          <span style="display:inline-block;width:14px;height:14px;border-radius:50%;border:1px solid #aaa;text-align:center;line-height:14px;font-size:9px;color:#666;">i</span>
+        </td>
+        <td style="vertical-align:middle;">
+          <p style="font-family:'Google Sans','Product Sans',Arial,sans-serif;font-size:9px;color:#666;line-height:1.5;">This communication is part of an ongoing quarterly series focused on clinically relevant evidence in diabetic foot management. Please let us know in case you do not wish to receive these mails in future.</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+</div>
+</div>
+</body>
+</html>
